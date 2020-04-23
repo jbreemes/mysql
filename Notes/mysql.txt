@@ -1,0 +1,11 @@
+SELECT voorletters, tussenvoegsels, achternaam
+FROM student
+WHERE achternaam LIKE '_i____' ;
+
+SELECT voorletters, tussenvoegsels, achternaam
+FROM student
+WHERE uitgeschreven IS NULL;
+
+INSERT INTO student
+(studentnr, roepnaam, voorletters, tussenvoegsels, achternaam, adres, postcode, woonplaats, geslacht, telefoon, geboortedatum, schoolgeld, betaald)
+VALUES ("9382", "Yanneke", "Y", "", "Rozedraier", "rozestraat 2", "1295OU", "Limburg", "V", "", "2000-09-01", 2500, 1500);
